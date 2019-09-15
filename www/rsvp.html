@@ -29,15 +29,14 @@
 		
 		<div class="container">
 		
-			<a class="logo" href="#"><img src="images/logo-white.png" alt="Logo"></a>
+			<a class="logo" href="index.html"><img src="images/logo-white.png" alt="Logo"></a>
 			
 			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="icon icon-bars"></i></div>
 			
 			<ul class="main-menu visible-on-click" id="main-menu">
 				<li><a href="index.html">HOME</a></li>
-				<li><a href="03-regular-page.html">FAQs</a></li>
-				<li><a href="#">GALLERY</a></li>
-				<li><a href="02-rsvp.html">RSVP</a></li>
+				<li><a href="faq.html">FAQs</a></li>
+				<li><a href="rsvp.html">RSVP</a></li>
 			</ul><!-- main-menu -->
 			
 		</div><!-- container -->
@@ -71,12 +70,10 @@
 								<i class="icon icon-star"></i>
 							</div>
 							
-							<p>On the 25 September 2017</p>
+							<p>On the 23rd of December 2019</p>
 							<p>Join us as we celebrate life and love.</p>
-							<h3><a href="tel:784-412-0646" class="phone">784-412-0646</a></h3>
-							<h3><a href="tel:784-412-0245" class="phone">784-412-0245</a></h3>
-							<h5><a href="mailto:events@colorlib.com" class="email">events@colorlib.com</a></h5>
-							<p>14 Baria street 133/2, New York City, US</p>
+							<h4><a href="tel:784-412-0646" class="phone">+63 917 853 6912</a></h4>
+							<h5><a href="mailto:silvasayson@gmail.com" class="email">silvasayson@gmail.com</a></h5>
 							
 						</div><!-- display-table-cell -->
 					</div><!-- margin-bottom -->
@@ -84,44 +81,26 @@
 				
 				<div class="col-sm-12 col-md-8 col-lg-6">
 					<div class="contact-form margin-bottom">
-						<h2 class="center-text">Are you getting?</h2>
-						<h4 class="pre-title center-text">RSVP HERE!</h4>
-						<form method="post">
+						<h2 class="center-text" id="rsvp-text">Will you attend?</h2>
+						<h4 class="pre-title center-text" id="rsvp-title"><a href="https://markyourclairendar.app.rsvpify.com/" class="emai"l>RSVP HERE!</a></h4>
+
+						<!-- <form id="rsvp-form">
 							<div class="row">
 							
 								<div class="col-sm-12 margin-bottom">
 									<label>Full Name</label>
-									<input class="name-input" type="text" >
+									<input class="name-input" type="text" name="name">
 								</div>
 								<div class="col-sm-12 margin-bottom">
-									<label>Email</label>
-									<input class="email-input" type="text" >
-								</div>
-								<div class="col-sm-6 margin-bottom">
-									<label>Guest</label>
-									<select class="event-select" name="option">
-										<option value="1"><span>00</span></option>
-										<option value="2">01</option>
-										<option value="3">02</option>
-										<option value="3">03</option>
-										<option value="3">04</option>
-									</select>
-								</div>
-								<div class="col-sm-6 margin-bottom">
-									<label>Event</label>
-									<select class="event-select" name="option">
-										<option value="1">All Events</option>
-										<option value="3">Option 1</option>
-										<option value="3">Option 2</option>
-										<option value="3">Option 3</option>
-									</select>
+									<label>Contanct No.</label>
+									<input class="email-input" type="text" name="contactNo">
 								</div>
 								<div class="col-sm-12 center-text">
-									<button class="btn"><b>I AM ATTENDING</b></button>
+									<button type="submit" id="submit-form" class="btn"><b>I AM ATTENDING</b></button>
 								</div>
 								
 							</div><!-- row -->	
-						</form>
+						<!-- </form> -->
 					</div><!-- contact-form -->
 				</div><!-- col-sm-6 -->
 				
@@ -130,21 +109,19 @@
 	</section><!-- section -->
 	
 	<div class="map-area">
-		<div id="map" style="height:100%;"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.686621625353!2d121.05304461537418!3d14.559904789828439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c85fc770a3a5%3A0xc789b843a2966a65!2sSt.%20Michael%20the%20Archangel%20Parish!5e0!3m2!1sen!2sph!4v1568425921955!5m2!1sen!2sph" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	</div><!-- map-area -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap"></script>
 	
-		
 	<footer>
 		<div class="container center-text">
 			
 			<div class="logo-wrapper">
-				<a class="logo" href="#"><img src="images/logo-black.png" alt="Logo Image"></a>
+				<a class="logo" href="https://colorlib.com"><img src="images/logo-black.png" alt="Logo Image"></a>
 				<i class="icon icon-star"></i>
 			</div>
 
 			<ul class="footer-links">
-				<li><a href="#">CONTACT US</a></li>
+				<li><a href="https://colorlib.com">CONTACT US</a></li>
 			</ul>
 			
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -164,6 +141,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="common-js/bootstrap.js"></script>
 	
 	<script src="common-js/scripts.js"></script>
+
+	<script>
+		// var $form = $("form#rsvp-form"),
+		// 	url = "https://script.google.com/macros/s/AKfycbymPgUcTEhyDf21L3AgHa1g8K-jmFcHmlQM3E-zhmOe1PbokVdc/exec"
+
+		// $("#submit-form").on("click", function(e) {
+		// 	e.preventDefault();
+		// 	var jqxhr = $.ajax({
+		// 		url: url,
+		// 		method: "GET",
+		// 		dataType: "json",
+		// 		data: $form.serialize(),
+		// 		success:function(data) {
+		// 			$("form#rsvp-form").trigger('reset');
+		// 			$("form#rsvp-form").remove();
+		// 			$("#rsvp-text").text("Thank you!");
+		// 			$("#rsvp-title").text("See you on Dec. 23, 2019");
+		// 		}
+		// 	});
+		// })
+	</script>
 	
 </body>
 </html>
