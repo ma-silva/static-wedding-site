@@ -42,9 +42,9 @@
 	
 	var isAnimated = false;
 	
+	$('.player').mb_YTPlayer();
 	
 })(jQuery);
-
 
 
 function countdownTime(){
